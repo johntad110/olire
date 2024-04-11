@@ -1,0 +1,74 @@
+{
+    "libraries": [
+        {
+            "name": "TensorFlow",
+            "description": "An open-source software library for numerical computation using flow graphs.",
+            "url": "https://www.tensorflow.org/",
+            "tags": [
+                "machine learning",
+                "deep learning"
+            ],
+            "programming_languages": [
+                "Python",
+                "Node.js"
+            ]
+        },
+        {
+            "name": "PyTorch",
+            "description": "An open-source machine learning library based on the Torch library.",
+            "url": "https://pytorch.org/",
+            "tags": [
+                "machine learning",
+                "deep learning"
+            ],
+            "programming_languages": [
+                "Python"
+            ]
+        },
+        {
+            "name": "Scikit-learn",
+            "description": "A machine learning library for Python.",
+            "url": "https://scikit-learn.org/",
+            "tags": [
+                "machine learning",
+                "data science"
+            ],
+            "programming_languages": [
+                "Python"
+            ]
+        },
+        {
+            "name": "Keras",
+            "description": "A high-level deep learning API written in Python.",
+            "url": "https://keras.io/",
+            "tags": [
+                "machine learning",
+                "deep learning"
+            ],
+            "programming_languages": [
+                "Python"
+            ]
+        }
+    ],
+    "languages": [
+        "Python",
+        "Javascript",
+        "Ruby",
+        "Java",
+        "C++",
+        "C#",
+        "Go",
+        "Rust",
+        "Swift",
+        "Kotlin",
+        "Scala",
+        "PHP",
+        "TypeScript"
+    ],
+    "tags": [
+        "Data Analysis",
+        "Data Visualization",
+        "Natural Language Processing",
+        "Computer Vision"
+    ]
+}

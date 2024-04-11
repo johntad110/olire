@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  olire-data:
+    build: ./data
+    volumes:
+      - ./data/schema.sql:/docker-entrypoint.initdb.d/schema.sql
+      - olire-data:/var/lib/mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: olire
+      MYSQL_ROOT_PASSWORD: password # CHANGE_ME 😡!!!
+
+  scrape:
+    build: ./scrape
+    volumes:
+      - ./scrape:/app
+    depends_on:
+      - olire-data
+
+volumes:
+  olire-data: # persistent storage for database
