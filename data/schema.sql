@@ -1,6 +1,6 @@
 CREATE TABLE Libraries (
     id INT PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(255),
+    name VARCHAR(255) UNIQUE,
     description TEXT,
     url VARCHAR(255)
 );

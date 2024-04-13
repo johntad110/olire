@@ -5,10 +5,10 @@ from typing import Union, Optional, List
 from mysql.connector.connection import MySQLConnection, MySQLConnectionAbstract
 
 
-DB_HOST = "uranium.da.hostns.io"
-DB_USER = "hayaanvw_olire"
-DB_PASSWORD = "mvVh2X2dM4SWUtH98QDe"
-DB_NAME = "hayaanvw_olire"
+DB_HOST = "olire-olire-data-1"
+DB_USER = "root"
+DB_PASSWORD = "password"
+DB_NAME = "olire"
 MAX_RETRIES = 10
 RETRY_INTERVAL = 5
 
@@ -113,11 +113,11 @@ def get_language_id(language: str) -> int:
 
 
 def populte_data():
-    with open("mock_data.json", "r", encoding="utf-8") as f:
+    with open("mock_data.json", "r") as f:
         data = json.load(f)
 
-    # for pl in data["languages"]: insert_language_data({"name": f"{pl}"})
-    # for tag in data["tags"]: insert_tag_data({"name": f"{tag}"})
+    for pl in data["languages"]: insert_language_data({"name": f"{pl}"})
+    for tag in data["tags"]: insert_tag_data({"name": f"{tag}"})
     for lib in data["libraries"]: insert_library_data(lib)
     for lib in data["libraries"]: insert_relationships(lib)
 
