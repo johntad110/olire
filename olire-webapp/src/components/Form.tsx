@@ -80,7 +80,7 @@ export function SelectForm({ onsubmitHandler }: SelectFormHandler) {
     useEffect(() => {
         fetchTags()
         fetchPls()
-    })
+    }, [])
 
     return (
         <Form {...form}>
